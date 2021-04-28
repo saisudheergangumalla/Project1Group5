@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.page {
+    width: 1300px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #999;
+    background-color: white;
+    margin: 10px auto 0;
+}
+
+div {
+    display: block;
+}
+
+.color-container {
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.color {
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: 200px;
+    margin: 0px auto;
+}
+
+.title {
+    text-align: center;
+    background-color: #F5CF8E;
+}
+
+.color-section {
+    float: left;
+    width: 300px;
+     height: 400px;
+    /*background-color: #F09A9D;*/
+    box-shadow: 3px 3px 1px #ccc;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.current-picture {
+    float: left;                  /* Add this */
+    width: 975px;
+    /*height: 500px;*/
+    /*background-color: #F5CF8E;*/
+
+    margin: 15px 5px;
+    box-shadow: 3px 3px 1px #ccc;
+}
+img {
+    border: 1px black solid;
+    width: inherit;
+}
+hr {
+    clear: both;
+    margin: 20px 0;
+    border: 1px solid #f00;
+}
+.app-name{
+    padding: 10px;
+}
+.menu {
+    height: 100px;
+    background-color: #B2D6FF;    /* Medium blue */
+}
+
+.sidebar {
+    height: 200px;
+    background-color: #F09A9D;    /* Red */
+}
+
+.content {
+    height: 400px;
+    background-color: #F5CF8E;    /* Yellow */
+}
+
+.footer {
+    height: 200px;
+    background-color: #D6E9FE;    /* Light blue */
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.button, input[type=button], input[type=submit], input[type=reset] {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #365899;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 10px #999;
+}
+
+
+.next-button:hover, input[type=submit]:hover {background-color: Coral}
+.next-button:active, input[type=submit]:active {
+    background-color: #365899;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.next-button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #365899;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px #999;
+    display: flow-root;
+
+}
+.color-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    transition: color 300ms linear;
+}
+.color-block{
+    flex-basis: 100%;
+    height: 20px;
+    margin-top: 6px;
+    transition: background-color 300ms linear;
+}
+.color-percent{
+    flex-grow: 1;
+    font-size: 1.1em;
+    text-align: right;
+}
+.color-text {
+    font-size: .9em;
+}
